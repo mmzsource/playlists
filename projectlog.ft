@@ -35,11 +35,26 @@ In short: the application goal is to greatly simplify the way I create and updat
 
 During the creation of the software I will log my progress and learning experiences in this log.
 
-
-
 ## 20150915
 
 - Project initiation
 - Create git repo
 - First version of project log
+- First slice delivered (took me less than 2h)
 
+Plan: I don't know what the application will look like in the end, but I do know there needs to be communication between my NAS and external devices. Therefore my first piece of functionality will be an application deployed to - and running on my NAS serving something trivial like 'playlist application' to a web frontend. Furthermore, I'm sure my server application needs to react to calls from my webclient. Therefore, the second piece of functionality will send a request from the webclient to the server and retrieve a value back.
+
+Plan.todo
+- send 'playlist application' from my NAS to the webclient
+	- First version on local pc @done(2015-09-13)
+	- First version on NAS @done(2015-09-13)
+	- Cleanup code @done(2015-09-13)
+	- Update .gitignore @done(2015-09-13)
+	- Document @done(2015-09-13)
+	- RestAssured Tests?
+	- Paw Tests
+		- local profile
+		- NAS profile
+	- Script to copy from dev-pc to NAS
+	- Script to starting / stopping application on the NAS from dev-pc
+- send command from webclient to NAS and retrieve value back.
