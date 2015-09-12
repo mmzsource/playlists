@@ -1,0 +1,45 @@
+# Playlists
+
+## Introduction
+
+Inspired by my [industriallogic course](https://www.industriallogic.com/) and the book [The nature of software development](https://pragprog.com/book/rjnsd/the-nature-of-software-development) I decided to 'sharpen the saw' and build a new product from scratch. My focus will be on:
+
+- Slicing features to minimal chunks of end-to-end functionality
+- Evolutionary design
+- Learning javascript
+
+### Functional Background
+
+I'm the lucky owner of a pretty impressive collection of music. I really took the time to convert my CDs to flacs and made sure all metadata, tags and covers are correct. Although I love to listen to complete albums, I also experienced how playlists add even more value to my collection. 
+
+Every client program I used so far has the ability to create playlists (iTunes, Windows media player, VLC, BubbleUpnp, my streamers client, etc.). The desktop clients are pretty OK when it comes to exporting these playlists. But in practice I mostly use mobile upnp clients when creating, updating and listening to playlists. This has rather annoying consequences:
+
+1. Every time my NAS restarts, my upnp server (twonky) creates new 'upnp pointers' to the songs on disk, making the playlists on the client useless.
+2. The playlists on one client are not available on another client.
+
+I 'kinda' solved this problem by creating m3u playlists, storing them on my NAS and pointing to them from my clients. But these are 'read only' playlists, because upnp clients can use the playlists, but cannot update them. 
+The work of creating m3u playlists is no fun. This is a shame, because I have a couple of real good playlists waiting to be converted on my devices.
+
+### Alternative solutions
+
+It might be better to dive in and investigate the problem: are 'stable' playlists impossible with dlna / upnp? Is this a bug in twonky? I could also jump to a solution immediately and search for existing applications which solve my playlist problem, etc. But then I won't reach my learning goals.
+
+Another option is to put my trust in online streaming solutions like spotify. And although I really like spotify, I really don't like vendor lockin. Plus, I don't like the way spotify pays artists. 
+I also noticed that having all songs immediately available at your fingertips is not necessarily better. Somehow I seem to value the songs I own better: I discovered them by incident (radio, parties, movies), sometimes had to search a long time before I found them, had to earn money to buy them, sometimes had to wait for them to arrive, converted them with care to the best possible quality, back them up, have lots of memories connected to them and enjoyed them many times. 
+
+Growing your own music collection isn't so bad after all. The same is probably true for maintaining your own playlists.
+
+## Goals
+
+In short: the application goal is to greatly simplify the way I create and update my playlists. The learning goals are feature slicing, evolutionary design and javascript.
+
+During the creation of the software I will log my progress and learning experiences in this log.
+
+
+
+## 20150915
+
+- Project initiation
+- Create git repo
+- First version of project log
+
