@@ -64,15 +64,19 @@ Plan.todo
 In the previous slice I noticed the constraints of my NAS. It's internal memory is simply too small to run all services currently running on the NAS PLUS the additional JVM and tomcat server with spring boot. Too bad. Therefore I'm going to give nodejs a try in this slice. I'll be starting from scratch, so it's probably best to throw the old code away and work through my todo's again, but this time with nodejs.
 
 Plan.todo
-- send 'playlist application' from my NAS to the webclient
-  - First version on local pc @done(2015-09-13)
-  - First version on NAS @done(2015-09-13)
-  - Cleanup code @done(2015-09-13)
-  - Update .gitignore @done(2015-09-13)
-  - Document @done(2015-09-13)
+- create first version of 'playlist application' and communicate between NAS <-> webclient
+  - Setup IntelliJ for Node.js & Angular @done(2015-12-21)
+  - First version on local pc @done(2015-12-21)
+    - Show list of (default) playlists @done(2015-12-21)
+    - Add Playlist name @done(2015-12-21)
+  - Cleanup code @done(2015-12-21)
+  - Document @done(2015-12-21)
   - Paw Tests
-    - local profile
+    - local profile @done(2015-12-21)
     - NAS profile
+  - Setup NAS for Node.js
+  - Setup NAS to serve index.html
+  - First version on NAS
+  - Update .gitignore
   - Script to copy from dev-pc to NAS
   - Script to starting / stopping application on the NAS from dev-pc
-- send command from webclient to NAS and retrieve value back.
